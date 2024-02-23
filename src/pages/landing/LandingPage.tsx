@@ -8,7 +8,7 @@ import SataticsSection from "../../components/landing/statistics/Satatics";
 
 export default function LandingPage() {
   return (
-    <div className="p-4 md:p-0">
+    <div>
       <Hero />
       <SataticsSection />
       <ServicesSection />

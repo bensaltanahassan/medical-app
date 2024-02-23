@@ -24,7 +24,7 @@ export default function ReviewsSection() {
             <div className="text-sm text-gray-500">24/02/2024</div>
           </div>
           {/* Comment */}
-          <div className="text-sm text-gray-500 text-start mb-2">
+          <div className="text-sm text-gray-500 text-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
             sequi, saepe repudiandae iure distinctio temporibus atque quo, rerum
             beatae nihil quidem. Accusantium numquam rerum nihil doloremque
