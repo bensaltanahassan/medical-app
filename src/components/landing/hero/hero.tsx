@@ -2,10 +2,7 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <div
-      className="hero flex items-center p-4 md:p-0 flex-col md:flex-row justify-center 
-    "
-    >
+    <div className="hero flex items-center p-4 md:p-0 flex-col md:flex-row justify-center ">
       <div className=" text-center md:text-start md:w-1/2 ">
         <div className="text-5xl font-bold">
           We will help you to improve your your mental health

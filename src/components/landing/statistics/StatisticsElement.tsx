@@ -1,4 +1,4 @@
-export default function StatisticsSection({
+export default function StatisticsELement({
   title,
   desc,
   className,
