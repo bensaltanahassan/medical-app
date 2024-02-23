@@ -2,7 +2,7 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 export default function ReviewsSection() {
   return (
-    <div className="flex flex-col items-center justify-center mt-10">
+    <div className="flex flex-col items-center justify-center my-10">
       <div className="flex flex-col items-center justify-center text-center mb-10">
         <div className="text-center font-semibold">What Our Client's Say</div>
         <div className="text-center text-sm text-gray-500 sm:w-2/3">

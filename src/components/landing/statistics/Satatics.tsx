@@ -2,7 +2,7 @@ import StatisticsELement from "./StatisticsElement";
 
 export default function SataticsSection() {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4 p-4 text-white bg-green-50">
+    <div className="flex flex-wrap justify-center items-center gap-4 py-10 px-4 text-white bg-green-50">
       <StatisticsELement
         title="24/6"
         desc="Online Support"

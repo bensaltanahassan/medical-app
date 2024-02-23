@@ -25,7 +25,10 @@ export default function NavBar() {
       </div>
       {/* Auth Button */}
       <div className="flex items-center space-x-4">
-        <button className="font-semibold text-center" onClick={goToLogin}>
+        <button
+          className="font-semibold text-center bg-white hover:bg-gray-100 px-4 py-1 rounded-md"
+          onClick={goToLogin}
+        >
           Login
         </button>
         <button
