@@ -11,7 +11,7 @@ export default function NavBar() {
     navigation("/register");
   };
   return (
-    <div className="flex justify-between p-4 items-center ">
+    <div className="flex justify-between p-4 items-center h-16">
       {/* Logo */}
       <div className="text-xl font-bold cursor-pointer text-green-600">
         MEDICAL
