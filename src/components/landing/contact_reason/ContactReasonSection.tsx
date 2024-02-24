@@ -12,10 +12,10 @@ export default function ContactReasonSection() {
       </div>
       <div className="flex flex-row gap-10 w-full mt-5">
         {/* Image */}
-        <div className="w-1/3 hidden md:flex">
+        <div className="w-1/2 hidden md:flex">
           <img
             alt=""
-            src="images/doctor.png"
+            src="images/doctors.jpg"
             className="h-96 w-full object-cover rounded-lg"
           />
         </div>

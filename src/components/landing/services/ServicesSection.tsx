@@ -12,10 +12,26 @@ export default function ServicesSection() {
       </div>
       {/* Services */}
       <div className="flex flex-wrap justify-center items-center gap-4">
-        <CustomService />
-        <CustomService />
-        <CustomService />
-        <CustomService />
+        <CustomService
+          title="Counseling"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          image="/images/services/health.png"
+        />
+        <CustomService
+          title="Support Group"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          image="/images/services/support.png"
+        />
+        <CustomService
+          title="Prescription medicine"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          image="/images/services/tablets.png"
+        />
+        <CustomService
+          title="Emergency Services"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          image="/images/services/stethoscopes.png"
+        />
       </div>
     </div>
   );
