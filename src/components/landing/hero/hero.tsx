@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="hero flex items-center flex-col md:flex-row justify-center ">
       <div className=" text-center md:text-start md:w-1/2 ">
         <div className="text-5xl font-bold">
-          We will help you to improve your your mental health
+          Empowering Lives, Defeating Liver Cancer
         </div>
         <div className="text-xl font-semibold text-gray-600 mt-6">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic

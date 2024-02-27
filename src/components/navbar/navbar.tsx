@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
+import { AppConstants } from "../../core/classes/constants";
 
-export default function NavBar() {
+export default function NavBar({
+  handleContactClick,
+}: {
+  handleContactClick: () => void;
+}) {
   const [showMenu, setShowMenu] = useState(false);
   const navigation = useNavigate();
   const goToLogin = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -16,19 +21,22 @@ export default function NavBar() {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <div>
       <div className="flex justify-between p-4 items-center h-16">
         {/* Logo */}
         <div className="text-xl font-bold cursor-pointer text-green-600">
-          MEDICAL
+          {AppConstants.appName}
         </div>
         {/* NavLinks */}
         <div className="space-x-4 text-l font-semibold text-black hidden sm:flex">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
+          <div onClick={handleContactClick} className="cursor-pointer">
+            Contact
+          </div>
         </div>
         {/* Auth Button */}
         <div className="sm:flex items-center space-x-4 hidden">
@@ -75,9 +83,12 @@ export default function NavBar() {
               Services
             </Link>
             <Link
-              to="/contact"
+              to="#"
               className="hover:bg-green-600 hover:text-white px-4 py-1 rounded-md"
-              onClick={() => setShowMenu(false)}
+              onClick={() => {
+                setShowMenu(false);
+                handleContactClick();
+              }}
             >
               Contact
             </Link>

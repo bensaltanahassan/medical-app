@@ -13,24 +13,24 @@ export default function ServicesSection() {
       {/* Services */}
       <div className="flex flex-wrap justify-center items-center gap-4">
         <CustomService
-          title="Counseling"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          image="/images/services/health.png"
+          title="Personalized Treatment Plans"
+          desc="Receive customized treatment strategies tailored to your unique liver cancer diagnosis."
+          image="/images/services/service1.png"
         />
         <CustomService
-          title="Support Group"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          image="/images/services/support.png"
+          title="Real-time Health Monitoring"
+          desc="Stay connected with your health in real-time through our advanced monitoring system. "
+          image="/images/services/service2.png"
         />
         <CustomService
-          title="Prescription medicine"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          image="/images/services/tablets.png"
+          title="Notification System"
+          desc="Never miss a beat with our notification system. "
+          image="/images/services/service3.png"
         />
         <CustomService
-          title="Emergency Services"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          image="/images/services/stethoscopes.png"
+          title="Secure Access to Reports"
+          desc="Access your medical reports and test results securely through our online portal."
+          image="/images/services/service4.png"
         />
       </div>
     </div>

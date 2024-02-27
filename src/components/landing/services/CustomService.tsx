@@ -8,7 +8,7 @@ export default function CustomService({
   image: string;
 }) {
   return (
-    <div className="w-56 h-56 rounded-lg border-2 border-gray-200 p-6">
+    <div className="w-56 h-60 rounded-lg border-2 border-gray-200 p-6">
       {/* Icon */}
       <div>
         <img alt="" src={image} width={50} height={50} />

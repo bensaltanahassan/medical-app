@@ -15,7 +15,9 @@ export default function LandingPage() {
       <AppointmentSection />
       <ReviewsSection />
       <ContactReasonSection />
-      <ContactSection />
+      <div id="contact">
+        <ContactSection />
+      </div>
     </div>
   );
 }
