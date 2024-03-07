@@ -31,28 +31,33 @@ export default function DashboardDoctor() {
               isTabActive={true}
               text="Overview"
               icon={<CgMenuGridR />}
+              link="/dashboard-doctor"
             />
             <SideBarItem
               isTabActive={false}
               text="Appointments"
               icon={<FaRegCalendarAlt />}
+              link="/dashboard-doctor/appointments"
             />
             <SideBarItem
               isTabActive={false}
               text="Patients"
               icon={<AiOutlineTeam />}
+              link="/dashboard-doctor/patients"
             />
 
             <SideBarItem
               isTabActive={false}
               text="Documents"
               icon={<AiOutlineFileText />}
+              link="/dashboard-doctor/documents"
             />
 
             <SideBarItem
               isTabActive={false}
               text="Messages"
               icon={<AiOutlineMessage />}
+              link="/dashboard-doctor/messages"
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -60,11 +65,13 @@ export default function DashboardDoctor() {
               isTabActive={false}
               text="Notifications"
               icon={<IoMdNotificationsOutline />}
+              link="/dashboard-doctor/notifications"
             />
             <SideBarItem
               isTabActive={false}
               text="Settings"
               icon={<CiSettings />}
+              link="/dashboard-doctor/settings"
             />
           </div>
         </div>
