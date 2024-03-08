@@ -31,3 +31,7 @@ code {
 .color-5 {
   background-color: #8ecae6;
 }
+
+.screen-height {
+  height: 100vh;
+}
