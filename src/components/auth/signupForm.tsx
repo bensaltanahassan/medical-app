@@ -10,7 +10,11 @@ interface FormValues {
   confirmPassword: string;
 }
 
-const SignupForm = () => {
+interface signUpFormContent {
+  setShowSignUp: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const SignupForm: React.FC<signUpFormContent> = ({ setShowSignUp }) => {
   const initialValues: FormValues = {
     firstName: "",
     lastName: "",
@@ -41,9 +45,18 @@ const SignupForm = () => {
 
   return (
     <div>
-      <h5 className="mb-8 text-3xl font-bold text-gray-900 text-center">
-        Sign Up Doctor
-      </h5>
+      <div>
+        <a
+          onClick={() => {
+            setShowSignUp(true);
+          }}
+          className="border-2 rounded-lg text-2xl text-[#16A34A] transition ease-in duration-150  hover:bg-[#16A34A] hover:text-white p-2 cursor-pointer inline-block bg-gray-50 border-[#16A34A]">
+          <i className="fa-solid fa-backward-step   "></i>
+        </a>
+        <h5 className="mb-8 text-3xl font-bold text-gray-900 text-center">
+          Sign Up Patient
+        </h5>
+      </div>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
