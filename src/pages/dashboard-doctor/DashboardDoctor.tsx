@@ -7,7 +7,7 @@ export default function DashboardDoctor() {
       {/* sidebar */}
       <SideBar />
       {/* main content */}
-      <div className="bg-slate-200 w-full">
+      <div className="bg-slate-200 w-full px-4 pt-6">
         <Outlet />
       </div>
     </div>
