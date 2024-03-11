@@ -1,13 +1,16 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import React from "react";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 interface FormValues {
   email: string;
   password: string;
 }
+interface loginFormContent {
+  setShowLogin: React.Dispatch<React.SetStateAction<boolean>>;
+  user: string;
+}
 
-const LoginForm = () => {
+const LoginForm: React.FC<loginFormContent> = ({ setShowLogin, user }) => {
   const initialValues: FormValues = {
     email: "",
     password: "",
@@ -30,9 +33,18 @@ const LoginForm = () => {
 
   return (
     <div>
-      <h5 className="mb-8 text-3xl font-bold text-gray-900 text-center">
-        Login Doctor
-      </h5>
+      <div>
+        <a
+          onClick={() => {
+            setShowLogin(true);
+          }}
+          className="border-2 rounded-lg text-2xl text-[#16A34A] transition ease-in duration-150  hover:bg-[#16A34A] hover:text-white p-2 cursor-pointer inline-block bg-gray-50 border-[#16A34A]">
+          <i className="fa-solid fa-backward-step   "></i>
+        </a>
+        <h5 className="mb-8 text-3xl font-bold text-gray-900 text-center">
+          Sign Up {user.charAt(0).toUpperCase() + user.slice(1)}
+        </h5>
+      </div>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
